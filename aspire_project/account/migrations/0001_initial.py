@@ -13,20 +13,6 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='PrivateMessage',
-            fields=[
-                ('id', models.AutoField(serialize=False, primary_key=True)),
-                ('title', models.CharField(max_length=127)),
-                ('text', models.TextField()),
-                ('sent_date', models.DateField(auto_now_add=True, null=True)),
-                ('to_address', models.CharField(max_length=255)),
-                ('from_address', models.CharField(max_length=255)),
-            ],
-            options={
-                'db_table': 'at_private_messages',
-            },
-        ),
-        migrations.CreateModel(
             name='Student',
             fields=[
                 ('student_id', models.AutoField(serialize=False, primary_key=True)),

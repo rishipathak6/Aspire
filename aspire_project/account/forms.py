@@ -3,16 +3,7 @@ from django import forms
 from django.conf import settings
 from django.forms import ModelForm, TextInput
 from django.contrib.auth.models import User
-from account.models import PrivateMessage
 
-
-class PrivateMessageForm(forms.ModelForm):
-    class Meta:
-        model = PrivateMessage
-        fields = ['from_address', 'title', 'text']
-        labels = {
-            'from_address': 'From',
-        }
 
 class UserForm(forms.ModelForm):
     class Meta:
