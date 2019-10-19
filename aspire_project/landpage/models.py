@@ -1,25 +1,6 @@
 from django.db import models
 from registrar.models import Course
 
-# Create your models here.
-
-#     (2) Field Types
-#     https://docs.djangoproject.com/en/1.7/ref/models/fields/#field-types
-#
-#     (3) Meta Options
-#     https://docs.djangoproject.com/en/1.7/ref/models/options/
-#
-#     (4) Query Sets
-#     https://docs.djangoproject.com/en/1.7/ref/models/querysets/
-#
-#     (5) Models
-#     https://docs.djangoproject.com/en/1.7/topics/db/models/
-#
-#     (6) Model Instances
-#     https://docs.djangoproject.com/en/1.7/ref/models/instances/
-#
-
-
 class CoursePreview(models.Model):
     id = models.AutoField(primary_key=True)
     image_filename = models.CharField(max_length=31)

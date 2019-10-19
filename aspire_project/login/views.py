@@ -8,9 +8,6 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
 
-def login_modal(request):
-    return render(request, 'login/modal.html',{})
-
 
 def login_authentication(request):
     response_data = {'status' : 'failure', 'message' : 'an unknown error occured'}
