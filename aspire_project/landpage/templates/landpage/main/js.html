@@ -71,8 +71,10 @@ function ajax_popup_register()
         },
         error: function(xhr,status,error) {
             // error code here
+            console.log("error");
         },
         complete: function(xhr,status) {
+            console.log("done");
             // completion code here
         }
     });
