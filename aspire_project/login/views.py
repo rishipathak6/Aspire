@@ -24,11 +24,8 @@ def login_authentication(request):
             # Does the user exist for the username and has correct password?
             if user is not None:
                 # Is user suspended or active?
-                if user.is_active:
-                    response_data = {'status' : 'success', 'message' : 'logged on'}
-                    login(request, user)
-                else:
-                    response_data = {'status' : 'failure', 'message' : 'you are suspended'}
+                response_data = {'status' : 'success', 'message' : 'logged on'}
+                login(request, user)
             else:
                 response_data = {'status' : 'failure', 'message' : 'wrong username or password'}
     return HttpResponse(json.dumps(response_data), content_type="application/json")
