@@ -14,18 +14,32 @@
         <link rel="apple-touch-icon" sizes="72x72" href="{% static "img/apple-touch-icon-72x72.png" %}">
         <link rel="apple-touch-icon" sizes="114x114" href="{% static "img/apple-touch-icon-114x114.png" %}">
         <link rel="apple-touch-icon" sizes="144x144" href="{% static "img/apple-touch-icon-144x144.png" %}">
+
+
+
+
+
+        <!--  Open Graph Tags -->
+        <meta property="og:title" content="Aspire">
+        <meta property="og:description" content="E-Learning platform for IIT Guwahati">
+        <meta property="og:image" content="assets/img/logo-light.png">
+        <meta property="og:url" content="#">
+        <meta name="twitter:card" content="summary_large_image">
         <meta name="msvalidate.01" content="0D845C735BD4C19611239D1FDD802C63" />
         <meta name='yandex-verification' content='7db7d6658b4bc2a7' />
         <title>Aspire E-Learning</title>
-        
-        {% for local_css_url in local_css_urls %}
-            <link rel="stylesheet" href="{% static local_css_url %}">
-        {% endfor %}
+
+
+<!--        {% for local_css_url in local_css_urls %}-->
+<!--            <link rel="stylesheet" href="{% static local_css_url %}">-->
+<!--        {% endfor %}-->
+        <link rel = "stylesheet" href="{% static "assets/css/page.css" %}">
+        <link rel = "stylesheet" href="{% static "assets/css/style.css" %}">
         
         {% for local_js_url in local_js_urls %}
             <script src="{% static local_js_url %}"></script>
         {% endfor %}
-        
+
         <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
